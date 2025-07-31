@@ -1,0 +1,16 @@
+2025-07-30 23:37:52 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-30 23:42:03 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-30 23:44:10 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-30 23:46:53 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-30 23:53:03 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-30 23:55:44 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-30 23:55:44 [INFO]: ✅ Conectado ao MongoDB
+2025-07-30 23:55:44 [INFO]: 🔄 Conectando ao Redis...
+2025-07-30 23:55:44 [INFO]: ✅ Redis conectado e pronto
+2025-07-30 23:55:44 [INFO]: ✅ Conectado ao Redis
+2025-07-30 23:55:44 [INFO]: 🚀 Servidor rodando na porta 3001
+2025-07-30 23:55:44 [INFO]: 📱 Ambiente: development
+2025-07-30 23:55:44 [INFO]: 🔗 API Base URL: http://localhost:3001/api
+2025-07-30 23:55:44 [INFO]: 📊 Health Check: http://localhost:3001/health
+2025-07-31 00:21:00 [INFO]: ::1 - - [31/Jul/2025:03:21:00 +0000] "GET / HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 00:21:00 [INFO]: ::1 - - [31/Jul/2025:03:21:00 +0000] "GET /favicon.ico HTTP/1.1" 404 172 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
