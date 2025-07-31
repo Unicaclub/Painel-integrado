@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { apiService } from '../services/api';
+import { useNotification } from './NotificationSystem';
 import './AIChat.css';
 
 interface User {
@@ -37,30 +39,31 @@ const AIChat: React.FC<AIChatProps> = ({ user, isOpen, onToggle }) => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { showError, showSuccess } = useNotification();
 
   const quickActions: QuickAction[] = [
     {
       id: 'create-campaign',
-      label: 'Create Campaign',
-      prompt: 'I want to create a new marketing campaign',
+      label: 'Criar Campanha',
+      prompt: 'Quero criar uma nova campanha de marketing',
       icon: '🚀'
     },
     {
       id: 'analyze-performance',
-      label: 'Analyze Performance',
-      prompt: 'Show me insights about my current campaigns',
+      label: 'Analisar Performance',
+      prompt: 'Mostre-me insights sobre minhas campanhas atuais',
       icon: '📊'
     },
     {
       id: 'optimize-budget',
-      label: 'Optimize Budget',
-      prompt: 'Help me optimize my marketing budget allocation',
+      label: 'Otimizar Orçamento',
+      prompt: 'Ajude-me a otimizar a alocação do meu orçamento de marketing',
       icon: '💰'
     },
     {
       id: 'content-ideas',
-      label: 'Content Ideas',
-      prompt: 'Generate content ideas for my social media campaigns',
+      label: 'Ideias de Conteúdo',
+      prompt: 'Gere ideias de conteúdo para minhas campanhas de mídia social',
       icon: '💡'
     }
   ];

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { apiService } from '../services/api';
+import { useNotification } from './NotificationSystem';
 import './Dashboard.css';
 
 interface User {
@@ -44,6 +46,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
   const [analytics, setAnalytics] = useState<Analytics | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('overview');
+  const { showError, showSuccess } = useNotification();
 
   useEffect(() => {
     // Carregar dados do dashboard

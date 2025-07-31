@@ -3,6 +3,8 @@ import Dashboard from './components/Dashboard';
 import AIChat from './components/AIChat';
 import OnboardingFlow from './components/OnboardingFlow';
 import AuthenticationModal from './components/AuthenticationModal';
+import { NotificationProvider, useNotification } from './components/NotificationSystem';
+import { apiService } from './services/api';
 import './App.css';
 
 interface User {
@@ -13,36 +15,56 @@ interface User {
   isAuthenticated: boolean;
 }
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [showAuth, setShowAuth] = useState(true);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const { showError, showSuccess } = useNotification();
 
   useEffect(() => {
     // Verificar autenticação existente
     const checkAuth = async () => {
       try {
-        // Em uma aplicação real, isso verificaria tokens/sessão armazenados
         const storedUser = localStorage.getItem('painelIntegradoUser');
-        if (storedUser) {
-          const userData = JSON.parse(storedUser);
-          setUser(userData);
-          setShowAuth(false);
-          if (userData.isFirstTime) {
-            setShowOnboarding(true);
+        const storedToken = localStorage.getItem('painelIntegradoToken');
+        
+        if (storedUser && storedToken) {
+          try {
+            // Verificar se o token ainda é válido
+            const response = await apiService.verifyToken();
+            
+            if (response.success) {
+              const userData = JSON.parse(storedUser);
+              setUser(userData);
+              setShowAuth(false);
+              if (userData.isFirstTime) {
+                setShowOnboarding(true);
+              }
+              showSuccess('Bem-vindo de volta!', `Olá, ${userData.name}!`);
+            } else {
+              // Token inválido, limpar dados
+              localStorage.removeItem('painelIntegradoUser');
+              localStorage.removeItem('painelIntegradoToken');
+            }
+          } catch (error) {
+            // Erro na verificação do token, limpar dados
+            localStorage.removeItem('painelIntegradoUser');
+            localStorage.removeItem('painelIntegradoToken');
+            console.error('Token inválido:', error);
           }
         }
       } catch (error) {
         console.error('Falha na verificação de autenticação:', error);
+        showError('Erro de Autenticação', 'Falha ao verificar credenciais. Faça login novamente.');
       } finally {
         setLoading(false);
       }
     };
 
     checkAuth();
-  }, []);
+  }, [showError, showSuccess]);
 
   const handleAuthentication = (userData: User) => {
     setUser(userData);
@@ -107,6 +129,14 @@ const App: React.FC = () => {
         </>
       )}
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <NotificationProvider>
+      <AppContent />
+    </NotificationProvider>
   );
 };
 

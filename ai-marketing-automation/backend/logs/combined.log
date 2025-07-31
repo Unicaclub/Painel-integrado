@@ -14,3 +14,19 @@
 2025-07-30 23:55:44 [INFO]: 📊 Health Check: http://localhost:3001/health
 2025-07-31 00:21:00 [INFO]: ::1 - - [31/Jul/2025:03:21:00 +0000] "GET / HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
 2025-07-31 00:21:00 [INFO]: ::1 - - [31/Jul/2025:03:21:00 +0000] "GET /favicon.ico HTTP/1.1" 404 172 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 01:15:25 [INFO]: ✅ Agentes de IA inicializados:
+2025-07-31 01:15:25 [INFO]: ✅ Conectado ao MongoDB
+2025-07-31 01:15:25 [INFO]: 🔄 Conectando ao Redis...
+2025-07-31 01:15:25 [INFO]: ✅ Redis conectado e pronto
+2025-07-31 01:15:25 [INFO]: ✅ Conectado ao Redis
+2025-07-31 01:15:25 [INFO]: 🚀 Servidor rodando na porta 3001
+2025-07-31 01:15:25 [INFO]: 📱 Ambiente: development
+2025-07-31 01:15:25 [INFO]: 🔗 API Base URL: http://localhost:3001/api
+2025-07-31 01:15:25 [INFO]: 📊 Health Check: http://localhost:3001/health
+2025-07-31 01:24:39 [INFO]: ::1 - - [31/Jul/2025:04:24:39 +0000] "POST /api/auth/login HTTP/1.1" 200 209 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+2025-07-31 01:25:09 [INFO]: ::1 - - [31/Jul/2025:04:25:09 +0000] "POST /api/auth/login HTTP/1.1" 200 209 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 01:28:21 [INFO]: ::1 - - [31/Jul/2025:04:28:21 +0000] "GET /api/auth/verify HTTP/1.1" 200 129 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 01:28:21 [INFO]: ::1 - - [31/Jul/2025:04:28:21 +0000] "GET /api/auth/verify HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 01:31:25 [INFO]: ::1 - - [31/Jul/2025:04:31:25 +0000] "GET /api/auth/verify HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 01:31:25 [INFO]: ::1 - - [31/Jul/2025:04:31:25 +0000] "GET /api/auth/verify HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+2025-07-31 01:33:34 [INFO]: ::1 - - [31/Jul/2025:04:33:34 +0000] "POST /api/auth/register HTTP/1.1" 201 205 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
