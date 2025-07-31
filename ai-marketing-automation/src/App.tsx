@@ -21,11 +21,11 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate checking for existing authentication
+    // Verificar autenticação existente
     const checkAuth = async () => {
       try {
-        // In a real app, this would check for stored tokens/session
-        const storedUser = localStorage.getItem('aiMarketingUser');
+        // Em uma aplicação real, isso verificaria tokens/sessão armazenados
+        const storedUser = localStorage.getItem('painelIntegradoUser');
         if (storedUser) {
           const userData = JSON.parse(storedUser);
           setUser(userData);
@@ -35,7 +35,7 @@ const App: React.FC = () => {
           }
         }
       } catch (error) {
-        console.error('Auth check failed:', error);
+        console.error('Falha na verificação de autenticação:', error);
       } finally {
         setLoading(false);
       }
@@ -47,7 +47,7 @@ const App: React.FC = () => {
   const handleAuthentication = (userData: User) => {
     setUser(userData);
     setShowAuth(false);
-    localStorage.setItem('aiMarketingUser', JSON.stringify(userData));
+    localStorage.setItem('painelIntegradoUser', JSON.stringify(userData));
     
     if (userData.isFirstTime) {
       setShowOnboarding(true);
@@ -59,7 +59,7 @@ const App: React.FC = () => {
     if (user) {
       const updatedUser = { ...user, isFirstTime: false };
       setUser(updatedUser);
-      localStorage.setItem('aiMarketingUser', JSON.stringify(updatedUser));
+      localStorage.setItem('painelIntegradoUser', JSON.stringify(updatedUser));
     }
     setIsChatOpen(true);
   };
@@ -72,8 +72,8 @@ const App: React.FC = () => {
     return (
       <div className="loading-container">
         <div className="loading-spinner"></div>
-        <h2>Initializing AI Marketing Automation...</h2>
-        <p>Setting up your intelligent marketing assistant</p>
+        <h2>Inicializando Painel Integrado...</h2>
+        <p>Configurando seu assistente inteligente de marketing</p>
       </div>
     );
   }

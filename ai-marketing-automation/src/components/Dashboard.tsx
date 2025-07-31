@@ -46,17 +46,17 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
   const [activeTab, setActiveTab] = useState('overview');
 
   useEffect(() => {
-    // Simulate loading dashboard data
+    // Carregar dados do dashboard
     const loadDashboardData = async () => {
       try {
-        // Simulate API call
+        // Simular chamada da API
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        // Mock campaign data
+        // Dados mock das campanhas
         const mockCampaigns: Campaign[] = [
           {
             id: '1',
-            name: 'Summer Sale Campaign',
+            name: 'Campanha de Verão 2025',
             platform: 'Instagram',
             status: 'active',
             budget: 5000,
@@ -68,7 +68,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
           },
           {
             id: '2',
-            name: 'WhatsApp Lead Generation',
+            name: 'Geração de Leads WhatsApp',
             platform: 'WhatsApp',
             status: 'active',
             budget: 2000,
@@ -80,7 +80,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
           },
           {
             id: '3',
-            name: 'Facebook Brand Awareness',
+            name: 'Awareness Facebook',
             platform: 'Facebook',
             status: 'paused',
             budget: 3000,
@@ -94,7 +94,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
 
         setCampaigns(mockCampaigns);
 
-        // Calculate analytics
+        // Calcular analytics
         const totalSpent = mockCampaigns.reduce((sum, c) => sum + c.spent, 0);
         const totalImpressions = mockCampaigns.reduce((sum, c) => sum + c.impressions, 0);
         const totalClicks = mockCampaigns.reduce((sum, c) => sum + c.clicks, 0);
@@ -111,7 +111,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
           conversionRate: totalClicks > 0 ? (totalConversions / totalClicks) * 100 : 0
         });
       } catch (error) {
-        console.error('Failed to load dashboard data:', error);
+        console.error('Falha ao carregar dados do dashboard:', error);
       } finally {
         setLoading(false);
       }
@@ -121,14 +121,14 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
   }, []);
 
   const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('pt-BR', {
       style: 'currency',
-      currency: 'USD'
+      currency: 'BRL'
     }).format(amount);
   };
 
   const formatNumber = (num: number) => {
-    return new Intl.NumberFormat('en-US').format(num);
+    return new Intl.NumberFormat('pt-BR').format(num);
   };
 
   const getStatusColor = (status: Campaign['status']) => {
@@ -155,7 +155,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
     return (
       <div className="dashboard-loading">
         <div className="loading-spinner"></div>
-        <p>Loading your marketing dashboard...</p>
+        <p>Carregando seu painel de marketing...</p>
       </div>
     );
   }
@@ -166,20 +166,20 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
         <div className="header-content">
           <div className="header-left">
             <h1 className="dashboard-title">
-              Welcome back, <span className="text-gradient">{user.name}</span>
+              Bem-vindo de volta, <span className="text-gradient">{user.name}</span>
             </h1>
             <p className="dashboard-subtitle">
-              Your AI marketing assistant is ready to help you create amazing campaigns
+              Seu assistente de IA está pronto para ajudar você a criar campanhas incríveis
             </p>
           </div>
           <div className="header-right">
             <button 
               className="chat-toggle-btn"
               onClick={onToggleChat}
-              title="Toggle AI Assistant"
+              title="Alternar Assistente de IA"
             >
               <span className="chat-icon">🤖</span>
-              <span>AI Assistant</span>
+              <span>Assistente IA</span>
               {!isChatOpen && <span className="pulse-dot"></span>}
             </button>
           </div>
@@ -192,13 +192,13 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onToggleChat, isChatOpen })
             className={`nav-tab ${activeTab === 'overview' ? 'active' : ''}`}
             onClick={() => setActiveTab('overview')}
           >
-            📊 Overview
+            📊 Visão Geral
           </button>
           <button
             className={`nav-tab ${activeTab === 'campaigns' ? 'active' : ''}`}
             onClick={() => setActiveTab('campaigns')}
           >
-            🚀 Campaigns
+            🚀 Campanhas
           </button>
           <button
             className={`nav-tab ${activeTab === 'analytics' ? 'active' : ''}`}
