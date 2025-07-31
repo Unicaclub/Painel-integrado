@@ -71,7 +71,7 @@ router.post('/:agentName/message', asyncHandler(async (req: Request, res: Respon
       success: true,
       data: response
     });
-  } catch (error) {
+  } catch (error: unknown) {
     const errorMsg = error instanceof Error ? error.message : String(error);
     return res.status(500).json({
       success: false,
@@ -101,7 +101,7 @@ router.post('/select', asyncHandler(async (req: Request, res: Response) => {
         message: `Agente '${selectedAgent}' selecionado para processar a mensagem`
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao selecionar agente:', error);
     const errorMsg = error instanceof Error ? error.message : String(error);
     return res.status(500).json({
@@ -141,7 +141,7 @@ router.post('/chat', asyncHandler(async (req: Request, res: Response) => {
         selectedAgent
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro no chat com IA:', error);
     const errorMsg = error instanceof Error ? error.message : String(error);
     return res.status(500).json({
@@ -196,7 +196,7 @@ router.post('/test', asyncHandler(async (req: Request, res: Response) => {
         failed: results.filter(r => !r.success).length
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro no teste de agentes:', error);
     const errorMsg = error instanceof Error ? error.message : String(error);
     return res.status(500).json({
@@ -230,7 +230,7 @@ router.get('/stats', asyncHandler(async (req: Request, res: Response) => {
       success: true,
       data: stats
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao obter estatísticas dos agentes:', error);
     const errorMsg = error instanceof Error ? error.message : String(error);
     return res.status(500).json({

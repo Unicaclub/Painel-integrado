@@ -841,3 +841,1332 @@ TSError: ⨯ Unable to compile TypeScript:
     at Module.load (node:internal/modules/cjs/loader:1465:32)
     at Function._load (node:internal/modules/cjs/loader:1282:12)
     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:27:37 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/whatsappService.ts[0m:[93m58[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m58[0m       return response.data.success || response.status === 200;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m80[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m80[0m       return response.data.success || response.status === 200;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m102[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m102[0m       return response.data.success || response.status === 200;
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m116[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m116[0m       if (response.data && response.data.contact) {
+[7m   [0m [91m                                         ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m119[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m119[0m           name: response.data.contact.name || response.data.contact.pushname,
+[7m   [0m [91m                              ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m119[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m119[0m           name: response.data.contact.name || response.data.contact.pushname,
+[7m   [0m [91m                                                            ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m120[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m120[0m           profilePicture: response.data.contact.profilePicture
+[7m   [0m [91m                                        ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m231[0m:[93m20[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m231[0m         connected: response.data.connected || false,
+[7m   [0m [91m                   ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m232[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m232[0m         phone: response.data.phone || null,
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m233[0m:[93m17[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m233[0m         status: response.data.status || 'unknown'
+[7m   [0m [91m                ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m257[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m257[0m       if (response.data.success) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m259[0m         return response.data.groupId;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m283[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m283[0m       return response.data.success || response.status === 200;
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/whatsappService.ts[0m:[93m58[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m58[0m       return response.data.success || response.status === 200;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m80[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m80[0m       return response.data.success || response.status === 200;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m102[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m102[0m       return response.data.success || response.status === 200;
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m116[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m116[0m       if (response.data && response.data.contact) {
+[7m   [0m [91m                                         ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m119[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m119[0m           name: response.data.contact.name || response.data.contact.pushname,
+[7m   [0m [91m                              ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m119[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m119[0m           name: response.data.contact.name || response.data.contact.pushname,
+[7m   [0m [91m                                                            ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m120[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m120[0m           profilePicture: response.data.contact.profilePicture
+[7m   [0m [91m                                        ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m231[0m:[93m20[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m231[0m         connected: response.data.connected || false,
+[7m   [0m [91m                   ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m232[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m232[0m         phone: response.data.phone || null,
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m233[0m:[93m17[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m233[0m         status: response.data.status || 'unknown'
+[7m   [0m [91m                ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m257[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m257[0m       if (response.data.success) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m259[0m         return response.data.groupId;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m283[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m283[0m       return response.data.success || response.status === 200;
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/whatsappService.ts[0m:[93m58[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m58[0m       return response.data.success || response.status === 200;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m80[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m80[0m       return response.data.success || response.status === 200;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m102[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m102[0m       return response.data.success || response.status === 200;
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m116[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m116[0m       if (response.data && response.data.contact) {
+[7m   [0m [91m                                         ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m119[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m119[0m           name: response.data.contact.name || response.data.contact.pushname,
+[7m   [0m [91m                              ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m119[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m119[0m           name: response.data.contact.name || response.data.contact.pushname,
+[7m   [0m [91m                                                            ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m120[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'contact' does not exist on type '{}'.
+
+[7m120[0m           profilePicture: response.data.contact.profilePicture
+[7m   [0m [91m                                        ~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m231[0m:[93m20[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m231[0m         connected: response.data.connected || false,
+[7m   [0m [91m                   ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m232[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m232[0m         phone: response.data.phone || null,
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m233[0m:[93m17[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m233[0m         status: response.data.status || 'unknown'
+[7m   [0m [91m                ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m257[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m257[0m       if (response.data.success) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m259[0m         return response.data.groupId;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/whatsappService.ts[0m:[93m283[0m:[93m14[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m283[0m       return response.data.success || response.status === 200;
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:29:10 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/whatsappService.ts[0m:[93m265[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'string | undefined' is not assignable to type 'string | null'.
+  Type 'undefined' is not assignable to type 'string | null'.
+
+[7m265[0m         return data.groupId;
+[7m   [0m [91m        ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/whatsappService.ts[0m:[93m265[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'string | undefined' is not assignable to type 'string | null'.
+  Type 'undefined' is not assignable to type 'string | null'.
+
+[7m265[0m         return data.groupId;
+[7m   [0m [91m        ~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/whatsappService.ts[0m:[93m265[0m:[93m9[0m - [91merror[0m[90m TS2322: [0mType 'string | undefined' is not assignable to type 'string | null'.
+  Type 'undefined' is not assignable to type 'string | null'.
+
+[7m265[0m         return data.groupId;
+[7m   [0m [91m        ~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:30:07 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:31:39 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:32:05 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:33:42 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:34:55 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:35:40 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-07-31 04:41:48 [ERROR]: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/metaService.ts[0m:[93m118[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m118[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m119[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_pic' does not exist on type '{}'.
+
+[7m119[0m           profilePicture: response.data.profile_pic,
+[7m   [0m [91m                                        ~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m145[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'name' does not exist on type '{}'.
+
+[7m145[0m           name: response.data.name,
+[7m   [0m [91m                              ~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m146[0m:[93m35[0m - [91merror[0m[90m TS2339: [0mProperty 'username' does not exist on type '{}'.
+
+[7m146[0m           username: response.data.username,
+[7m   [0m [91m                                  ~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m147[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'profile_picture_url' does not exist on type '{}'.
+
+[7m147[0m           profilePicture: response.data.profile_picture_url,
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m298[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m298[0m       if (response.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m300[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'response.data' is of type 'unknown'.
+
+[7m300[0m         return response.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m324[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m324[0m       if (!createResponse.data.id) {
+[7m   [0m [91m           ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m328[0m:[93m23[0m - [91merror[0m[90m TS18046: [0m'createResponse.data' is of type 'unknown'.
+
+[7m328[0m       const mediaId = createResponse.data.id;
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m343[0m       if (publishResponse.data.id) {
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/services/metaService.ts[0m:[93m345[0m:[93m16[0m - [91merror[0m[90m TS18046: [0m'publishResponse.data' is of type 'unknown'.
+
+[7m345[0m         return publishResponse.data.id;
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\User\Desktop\Ia marketing\Painel-integrado\ai-marketing-automation\backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)

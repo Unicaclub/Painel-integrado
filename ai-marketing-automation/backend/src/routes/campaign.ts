@@ -168,7 +168,7 @@ router.post('/', asyncHandler(async (req: Request, res: Response) => {
       data: newCampaign,
       message: 'Campanha criada com sucesso'
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao criar campanha:', error);
     return res.status(500).json({
       success: false,
@@ -195,7 +195,7 @@ router.put('/:id', asyncHandler(async (req: Request, res: Response) => {
       data: updatedCampaign,
       message: 'Campanha atualizada com sucesso'
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao atualizar campanha:', error);
     return res.status(500).json({
       success: false,
@@ -226,7 +226,7 @@ router.patch('/:id/status', asyncHandler(async (req: Request, res: Response) => 
       },
       message: `Campanha ${status === 'active' ? 'ativada' : status === 'paused' ? 'pausada' : 'finalizada'} com sucesso`
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao alterar status da campanha:', error);
     return res.status(500).json({
       success: false,
@@ -244,7 +244,7 @@ router.delete('/:id', asyncHandler(async (req: Request, res: Response) => {
       success: true,
       message: 'Campanha deletada com sucesso'
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao deletar campanha:', error);
     return res.status(500).json({
       success: false,
@@ -288,7 +288,7 @@ router.get('/:id/metrics', asyncHandler(async (req: Request, res: Response) => {
       success: true,
       data: metrics
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao obter métricas da campanha:', error);
     return res.status(500).json({
       success: false,

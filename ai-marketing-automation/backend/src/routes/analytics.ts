@@ -92,7 +92,7 @@ router.get('/dashboard', asyncHandler(async (req: Request, res: Response) => {
       success: true,
       data: analytics
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao obter analytics do dashboard:', error);
     return res.status(500).json({
       success: false,
@@ -166,7 +166,7 @@ router.get('/platform/:platform', asyncHandler(async (req: Request, res: Respons
       success: true,
       data: platformAnalytics
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error(`Erro ao obter analytics da plataforma ${req.params.platform}:`, error);
     return res.status(500).json({
       success: false,
@@ -241,7 +241,7 @@ router.get('/conversions', asyncHandler(async (req: Request, res: Response) => {
       success: true,
       data: conversionsReport
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro ao obter relatório de conversões:', error);
     return res.status(500).json({
       success: false,

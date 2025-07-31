@@ -112,11 +112,12 @@ class MetaService {
         }
       });
 
-      if (response.data) {
+      const data = response.data as { name?: string; profile_pic?: string };
+      if (data) {
         return {
           id: userId,
-          name: response.data.name,
-          profilePicture: response.data.profile_pic,
+          name: data.name,
+          profilePicture: data.profile_pic,
           platform: 'facebook'
         };
       }
@@ -139,12 +140,13 @@ class MetaService {
         }
       });
 
-      if (response.data) {
+      const data = response.data as { name?: string; username?: string; profile_picture_url?: string };
+      if (data) {
         return {
           id: userId,
-          name: response.data.name,
-          username: response.data.username,
-          profilePicture: response.data.profile_picture_url,
+          name: data.name,
+          username: data.username,
+          profilePicture: data.profile_picture_url,
           platform: 'instagram'
         };
       }
@@ -295,9 +297,10 @@ class MetaService {
         headers: this.getHeaders()
       });
 
-      if (response.data.id) {
+      const data = response.data as { id?: string };
+      if (data.id) {
         logWebhookActivity('facebook', 'post_published', { message: message.substring(0, 100), imageUrl });
-        return response.data.id;
+        return data.id;
       }
 
       return null;
@@ -321,11 +324,12 @@ class MetaService {
         headers: this.getHeaders()
       });
 
-      if (!createResponse.data.id) {
+      const createData = createResponse.data as { id?: string };
+      if (!createData.id) {
         return null;
       }
 
-      const mediaId = createResponse.data.id;
+      const mediaId = createData.id;
 
       // Aguardar processamento da mídia
       await new Promise(resolve => setTimeout(resolve, 5000));
@@ -340,9 +344,10 @@ class MetaService {
         headers: this.getHeaders()
       });
 
-      if (publishResponse.data.id) {
+      const publishData = publishResponse.data as { id?: string };
+      if (publishData.id) {
         logWebhookActivity('instagram', 'post_published', { imageUrl, caption: caption?.substring(0, 100) });
-        return publishResponse.data.id;
+        return publishData.id;
       }
 
       return null;

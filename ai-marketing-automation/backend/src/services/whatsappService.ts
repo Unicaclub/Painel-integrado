@@ -55,7 +55,8 @@ class WhatsAppService {
 
       logWebhookActivity('whatsapp', 'message_sent', { to, message: message.substring(0, 100) });
       
-      return response.data.success || response.status === 200;
+      const data = response.data as { success?: boolean };
+      return data.success || response.status === 200;
     } catch (error) {
       logger.error('Erro ao enviar mensagem WhatsApp:', error);
       return false;
@@ -77,7 +78,8 @@ class WhatsAppService {
 
       logWebhookActivity('whatsapp', 'image_sent', { to, imageUrl, caption });
       
-      return response.data.success || response.status === 200;
+      const data = response.data as { success?: boolean };
+      return data.success || response.status === 200;
     } catch (error) {
       logger.error('Erro ao enviar imagem WhatsApp:', error);
       return false;
@@ -99,7 +101,8 @@ class WhatsAppService {
 
       logWebhookActivity('whatsapp', 'document_sent', { to, documentUrl, filename });
       
-      return response.data.success || response.status === 200;
+      const data = response.data as { success?: boolean };
+      return data.success || response.status === 200;
     } catch (error) {
       logger.error('Erro ao enviar documento WhatsApp:', error);
       return false;
@@ -113,11 +116,12 @@ class WhatsAppService {
         headers: this.getHeaders()
       });
 
-      if (response.data && response.data.contact) {
+      const data = response.data as { contact?: { name?: string; pushname?: string; profilePicture?: string } };
+      if (data.contact) {
         return {
           phone: phone,
-          name: response.data.contact.name || response.data.contact.pushname,
-          profilePicture: response.data.contact.profilePicture
+          name: data.contact.name || data.contact.pushname,
+          profilePicture: data.contact.profilePicture
         };
       }
 
@@ -227,10 +231,11 @@ class WhatsAppService {
         headers: this.getHeaders()
       });
 
+      const data = response.data as { connected?: boolean; phone?: string | null; status?: string };
       return {
-        connected: response.data.connected || false,
-        phone: response.data.phone || null,
-        status: response.data.status || 'unknown'
+        connected: data.connected || false,
+        phone: data.phone || null,
+        status: data.status || 'unknown'
       };
     } catch (error) {
       logger.error('Erro ao obter status da instância:', error);
@@ -254,9 +259,10 @@ class WhatsAppService {
         headers: this.getHeaders()
       });
 
-      if (response.data.success) {
+      const data = response.data as { success?: boolean; groupId?: string };
+      if (data.success) {
         logWebhookActivity('whatsapp', 'group_created', { name, participants });
-        return response.data.groupId;
+        return data.groupId ?? null;
       }
 
       return null;
@@ -280,7 +286,8 @@ class WhatsAppService {
 
       logWebhookActivity('whatsapp', 'group_message_sent', { groupId, message: message.substring(0, 100) });
       
-      return response.data.success || response.status === 200;
+      const data = response.data as { success?: boolean };
+      return data.success || response.status === 200;
     } catch (error) {
       logger.error('Erro ao enviar mensagem para grupo:', error);
       return false;

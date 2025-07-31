@@ -34,7 +34,7 @@ router.post('/login', asyncHandler(async (req: Request, res: Response) => {
         message: 'Login realizado com sucesso'
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro no login:', error);
     return res.status(500).json({
       success: false,
@@ -72,7 +72,7 @@ router.post('/register', asyncHandler(async (req: Request, res: Response) => {
         message: 'Usuário criado com sucesso'
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro no registro:', error);
     return res.status(500).json({
       success: false,
@@ -97,7 +97,7 @@ router.get('/verify', asyncHandler(async (req: Request, res: Response) => {
         }
       }
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro na verificação do token:', error);
     return res.status(401).json({
       success: false,
@@ -113,7 +113,7 @@ router.post('/logout', asyncHandler(async (req: Request, res: Response) => {
       success: true,
       message: 'Logout realizado com sucesso'
     });
-  } catch (error) {
+  } catch (error: unknown) {
     logger.error('Erro no logout:', error);
     return res.status(500).json({
       success: false,
